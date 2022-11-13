@@ -32,14 +32,14 @@ class BookManage(object):
                 if book_name == i['bookname']:
                     print(i)
                     continue
-                # else:
-                #     tips = input('**图书馆没有当前图书**\n您是否要进行添加--yse/no:')
-                #     if tips == 'yes':
-                #         self.add_book()
-                #         break
-                #     else:
-                #         print('退出添加图书的模块')
-                #         break
+                else:
+                    tips = input('**图书馆没有当前图书**\n您是否要进行添加--yse/no:')
+                    if tips == 'yes':
+                        self.add_book()
+                        break
+                    else:
+                        print('退出添加图书的模块')
+                        break
 
 
 
